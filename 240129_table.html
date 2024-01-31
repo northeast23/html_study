@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        td,
+        th {
+            border: 1px solid black;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .colSecond {
+            width: 20%;
+            background-color: yellow;
+            border: 2px dotted red;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>3-1반 역사성적표</caption>
+        <tfoot>
+            <tr>
+                <td colspan="3" class="text-center"> 평균 </td>
+                <td> 84점 </td>
+            </tr>
+        </tfoot>
+        <thead>
+            <tr>
+                <td> 이름 </td>
+                <td> 반 </td>
+                <td> 번호 </td>
+                <td> 점수 </td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>재현</td>
+                <td rowspan="3">1반</td>
+                <td>1번</td>
+                <td>70점</td>
+            </tr>
+            <tr>
+                <td>랩몬</td>
+                <td>2번</td>
+                <td>90점</td>
+            </tr>
+            <tr>
+                <td>슈가</td>
+                <td>3번</td>
+                <td>93점</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
