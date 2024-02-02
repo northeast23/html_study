@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <!-- JS usage 1 -->
+    <button onclick="window.alert('hello world');">hello</button>
+    <button onclick="window.alert('hello world');"> new button</button>
+
+    <!-- JS usage 2 -->
+    <script>
+        window.alert("JS Executed ");
+
+    /* var 는 같은 범위(scope) 내에서 재선언 가능 */
+        var greeter = 'hey';
+        var greeter = 'say hello'
+    
+        var greeter = 'hey hu';
+        greeter = "say hello"
+    
+    /* function */
+
+        function showMessage() {
+            let message = "안녕하세요!"; // 지역 변수
+          
+            alert( message );
+        }
+          
+        showMessage(); // 안녕하세요!
+          
+        /* alert( message ); // ReferenceError: message is not defined (message는 함수 내 지역 변수이기 때문에 에러가 발생합니다.) */
+
+        // 읽어볼만한 문헌 : https://ko.javascript.info/arrow-functions-basics
+
+        function 함수1(x, y) {
+            return x + y
+        }
+        // 위 함수를 화살표 함수로 작성하면 아래와 같습니다.
+        let 함수1 = (x, y) => x + y
+
+        // 만악 함수 실행시 전달하는 인자가 한 개라면 소괄호를 생략할 수 있습니다.
+        let 함수2 = x => x + 10
+        let myfunc = x => x + y
+        
+        // 화살표 함수 내부에서 한 줄 표현식만 반환한다면 return 키워드를 생략해도 됩니다.
+        let 함수3 = x => x + 10
+
+        let 결과 = 함수3(2);
+
+        console.log(결과);
+
+        // 즉시실행함수 (IIFE, Immediately Invoked Function Expression)
+        (function() {
+            console.log('이 함수는 만들어지자마자 바로 실행됩니다!');
+          })();
+                    
+        (function() {
+            document.querySelector(".btn").addEventListener("click", function(){ 
+            console.log('click!')
+            });
+        })();
+        
+    </script>
+
+    <!-- JS usage 3 -->
+    <script src="test.js"></script>
+
+
+
+ 
+
+</body>
+</html>

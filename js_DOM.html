@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="ko">
+<head>
+    <style>
+        p {
+            font-size: 20;
+        }
+    </style>
+</head>
+<body>
+    <p id="one"> This is the One </p>
+    <p> DOM(Document Object Model) </p>
+    <p>DOM 은 HTML 문서의 내용을 트리형태로 구조화하여 웹페이지와 프로그래밍 언어를 연결. 각각의 요소와 속성, 콘텐츠를 표현하는 단위를 node(node) 라 함.</p>
+    <p></p>
+    <p></p>
+    <script>
+        /* window.alert('hello world!'); */
+        document.getElementById('one').innerHTML = 'hi world'
+
+        // document 는 브라우저가 불러온 웹페이지 
+        // 해당하는 Id를 가진 요소에 접근하기
+        document.getElementById();
+
+        // 해당하는 모든 요소에 접근하기
+        document.getElementsByTagName();
+
+        // 해당하는 클래스를 가진 모든 요소에 접근하기
+        document.getElementsByClassName();
+
+        // css 선택자로 단일 요소에 접근하기
+        document.querySelector("selector");
+
+        // css 선택자로 여러 요소에 접근하기
+        document.querySelectorAll("selector");
+
+        //
+        document.head
+        document.body
+        document.body.childNodes
+        document.body.childNodes[1]
+        document.body.childNodes[1].tagName
+        document.body.childNodes[1].innerText
+        document.body.childNodes[1]. //점만 찍어서 얼마나 많은 애트리뷰트가 있는지 확인해보세요.
+        document.body.childNodes[2]
+        document.body.childNodes[2].data
+
+        // DOM 제어 명령어
+        // 이벤트 삽입
+        // target.addEventListener( type, listener )
+        <button>HELLO!</button>
+
+        // 이벤트의 타입에는 click, mouseover, mouseout, wheel 등 다양한 이벤트를 감지합니다.
+        // listener 함수의 인수에는 이벤트에 대한 정보가 담겨있습니다.
+
+        const myBtn = document.querySelector("button");
+
+        myBtn.addEventListener('click', function(){
+            console.log("hello world");
+        })
+    </script> 
+
+    
+</body>
+</html> 
